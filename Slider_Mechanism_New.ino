@@ -31,7 +31,6 @@ void Motor_Brake(){
      analogWrite(PWM, 0);
 }
 void setup() {
-  // put your setup code here, to run once:
   pinMode(2 , INPUT);
   pinMode(3, INPUT);
 

@@ -46,34 +46,9 @@ void setup() {
 
 Motor_Brake();
 delay(1000);
-/*
-  if (digitalRead(3) == HIGH) {
-    while (digitalRead(3) == HIGH) {
-          Motor_Down(200);
-          Serial.println("Pin 3");
-    }
-    Motor_Brake();
-    upperSen = false;
-    lowerSen = true;
-  } else {
-    upperSen =false;
-    lowerSen = true;
-  }
-*/
-
-
-
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
- /*
- Serial.println("Higher Sensor: ");
- Serial.println(digitalRead(2));
- Serial.println("Lower Sensor: ");
- Serial.println(digitalRead(3));
- delay(1000);
- */
  
  if (Serial.available() > 0) {
       input = Serial.readStringUntil('.');
